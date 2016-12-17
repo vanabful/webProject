@@ -1,0 +1,425 @@
+::-webkit-scrollbar {
+display: none;
+}
+
+body{
+  margin: 0;
+  font-family: Georgia;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #F7F9F9;
+  color: #2e2e2e;
+}
+
+header{
+  background-color: white;
+  display: flex;
+  padding: 1.2rem;
+  box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.49);
+  width: 100%;
+  height: 7%;
+}
+
+header #logo {
+  height: 3%;
+  width: 3%;
+}
+
+header #logo img{
+  height: 100%;
+  width: 100%;
+}
+
+header a{
+  color: #888;
+  text-decoration: none;
+  margin-left: 2rem;
+  font-family: 'Libre Baskerville', serif;
+  align-self: center;
+  letter-spacing: .5px;
+  font-weight: 600;
+}
+
+header a:hover{
+  border-bottom: 2px solid #A62CA2;
+}
+
+header a.selected{
+  border-bottom: 2px solid #A62CA2;
+  color: #A62CA2;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 600;
+}
+
+main{
+  flex: 1;
+  max-width: 80%;
+  margin: 1rem auto;
+  font-family: 'Libre Baskerville', serif;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.heading-container{
+  display: flex;
+}
+
+.heading-container > h1{
+  font-family: 'Libre Baskerville', serif;
+  color: #222222;
+  font-size: 2.4rem;
+  letter-spacing: -.75px;
+}
+
+.heading-container > h4{
+  align-self: center;
+  margin-left: 1.5rem;
+  color: #009E99;
+  font-family: 'Libre Baskerville', serif;
+}
+
+#connect-container{
+  display: flex;
+  justify-content: flex-end;
+}
+
+#connect-container a{
+  text-decoration: none;
+  color: #888;
+  font-weight: 600;
+  font-size: 0.9rem;
+  align-self: center;
+  outline: none;
+}
+
+#connect-container .registration-container{
+  margin-right: 2rem;
+  align-self: center;
+}
+
+#connect-container .registration-container i{
+  color: #E96D09;
+  margin-right: 0.5rem;
+}
+
+#connect-container a:hover{
+  color: #009E99;
+}
+
+#izreka{
+  padding: 11px;
+  opacity: 0.9;
+  border: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+  color: #888;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 600;
+}
+
+#color-border{
+  background: linear-gradient(to right,#E96D09 20%,#E96D09 20%,#A62CA2 20%,#A62CA2 40%,#4F0090 40%,#4F0090 60%,#26B4AC 60%,#26B4AC 80%,#7FD759 80%);
+  line-height: 0;
+    width: 100%;
+    height: 6px;
+}
+
+.main-container{
+  position: relative;
+}
+
+ .main-part{
+  border: none;
+  display: flex;
+  border-radius: 8px;
+  padding: 13px;
+  margin-top: 1rem;
+  background-color: white;
+  position: relative;
+  justify-content: center;
+}
+
+.main-container > i{
+ position: absolute;
+}
+
+ .left{
+ left: -9%;
+ top: 12rem;
+}
+
+ .right{
+ right: -9%;
+ top: 12rem;
+}
+
+ .main-container > i:hover{
+ cursor: pointer;
+ color: #009E99;
+}
+
+
+ .main-part .left-main-container{
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+   width: 275px;
+  margin-right: 5rem;
+  max-height: 80%;
+  margin-top: 1.5rem;
+}
+
+.left-main-container ul{
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+
+.left-main-container > p{
+  text-align: justify;
+  align-self: center;
+  font-size: 90%;
+  color: #2e2e2e;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+  font-family: 'Libre Baskerville', serif;
+}
+
+
+
+.left-main-container > ul > li{
+  text-align: justify;
+  font-size: 90%;
+  color: #2e2e2e;
+  line-height: 1.5rem;
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+
+.left-main-container strong{
+  font-weight: 600;
+}
+
+.left-main-container > p > em{
+ line-height: 0.5rem;
+}
+
+.left-main-container > h2{
+  align-self: center;
+  font-weight: 600;
+  color: #222222;
+  font-size: 1.9rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: -.75px;
+}
+
+.left-main-container button{
+  width: 80%;
+  border: none;
+  border-radius: 8px;
+  align-self: center;
+  margin-top: 1.5rem;
+  padding: 10px;
+  color: #009E99;
+  font-family: 'Libre Baskerville', serif;
+  background-color: #f0f1f1;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.left-main-container button:hover{
+  background-color: #009E99;
+  color: white;
+  transition: 0.5s;
+}
+
+ .main-part .right-main-container{
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  margin-left: 2.5rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 0;
+}
+
+.right-main-container .main-picture-container{
+  max-height: 100%;
+  max-width: 100%;
+  align-self: center;
+}
+
+.right-main-container .main-picture-container img{
+  width: 100%;
+  height: 100%;
+}
+
+.right-main-container .stars-container{
+  align-self: center;
+  margin-top: 1rem;
+  color: #2e2e2e;
+  display: flex;
+  flex-direction: row;
+}
+
+.right-main-container .stars-container i{
+  margin-left: 0.5rem;
+}
+
+.right-main-container .stars-container > i:hover{
+  cursor: pointer;
+}
+
+.selected-star{
+  color: #dfe249;
+  cursor: pointer;
+}
+
+.bottom-container{
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 1rem;
+  background-color: white;
+}
+
+
+.bottom-container .card{
+  padding: 5px;
+  width: 248px;
+  background-color: #f0f1f1;
+  position: relative;
+  margin: 10px 10px 10px 0;
+  border-radius: 8px;
+}
+
+.bottom-container .first{
+  margin-left: 1rem;
+}
+
+.bottom-container .card img{
+  width: 100%;
+}
+
+.bottom-container .card .delete-button{
+  position: absolute;
+  right: -0.2rem;
+  top: -0.5rem;
+  cursor: pointer;
+  color: #E96D09; 
+}
+
+.bottom-container .card h3{
+  text-align: center;
+  color: #2e2e2e;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.bottom-container .card button{
+  width: 100%;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: .7px;
+  color: #009E99;
+}
+
+.bottom-container .card button:hover{
+  background-color: #009E99;
+  color: white;
+  transition: 0.5s;
+}
+
+ #add-newCard-button{
+  float: right;
+  margin-top: 1rem;
+  width: 20%;
+  border: 3px solid #E96D09;
+  border-radius: 8px;
+  color: #E96D09;
+  padding: 10px;
+  background-color: white;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 600;
+}
+
+ #add-newCard-button:hover{
+  background-color: #E96D09;
+  color: white;
+  transition: 0.5s;
+}
+
+hr{
+  margin-top: 5rem;
+  height: 5px;
+  background-color: #EDEDED;
+  border: none;
+}
+
+
+footer{
+  display: flex;
+  background-color: #003C6B;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  height: 79px;
+  width: 100%;
+}
+
+.social-media-container{
+  align-self: center;
+}
+
+.social-media-container a i {
+  margin-left: 1rem;
+}
+
+a.social-icons{
+  color: white;
+}
+
+.social-media-container a:hover{
+  color: #E96D09;
+  transition: 0.3s;
+}
+
+.name-container{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-self: center;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.name-container .center{
+  text-align: center;
+}
+
+.links-container{
+  align-self: center;
+  margin-right: 2rem;
+}
+
+.links-container a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Libre Baskerville', serif;
+  margin-left: 1rem;
+}
+
+.links-container a:hover{
+  color: #E96D09;
+  transition: 0.3s;
+}

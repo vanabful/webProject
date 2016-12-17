@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>PZI - Prvi domaći</title>
+    <link rel="stylesheet" href="styles/font-awesome.min.css"/>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="images/logo2.png" />
+  </head>
+  
+  <body>
+    <header>
+      <div id="logo">
+        <img src="images/logo2.png" alt="logo"/>
+      </div>
+      <a href="">HOME</a>
+      <a href="" class="selected">PSI</a>
+      <a href="">MAČKE</a>
+      <a href="">OSTALE  ŽIVOTINJE</a>
+    </header>
+    
+    <main>
+      <div class="heading-container">
+        <h1>Udomi Psa</h1>
+        <h4>Pruži im dom</h4>
+      </div>
+      <div id="connect-container">
+        <div class="registration-container">
+          <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+          <a href="">Registracija</a>
+        </div>
+        <a href="">Prijavi se</a>
+      </div>
+      <div id="izreka">
+       <label>Mnogi naši štićenici traže čovjeka koji će ih voljeti</label>
+      </div>
+      <div id="color-border">
+      </div>
+      <div class="main-container">
+				<div id="main-content-container">
+				</div>
+          <i class="fa fa-arrow-circle-right fa-4x right" aria-hidden="true"></i>
+          <i class="fa fa-arrow-circle-left fa-4x left" aria-hidden="true"></i>
+      </div>
+      <div class="bottom-container">
+          
+      </div>
+      <button id="add-newCard-button">DODAJ SLIKU</button>
+      <hr/>
+    </main>
+    
+    <footer>
+      <div class="social-media-container">
+        <a href="" class="social-icons"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+        <a href="" class="social-icons"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+      </div>
+      <div class="name-container">
+        <label>Sva prava pridržana</label>
+        <label class="center">Vana Brajčić</label>
+      </div>
+      <div class="links-container">
+        <a href="">Help</a>
+        <a href="">Contact</a>
+      </div>
+    </footer>
+    
+		<script type="text/html" id=slider-template>
+		<div class="main-part" dog-id = {{id}}>
+			<div class="left-main-container">
+				<h2>{{dogName}}</h2>
+				<ul>
+           <li><strong>Spol:</strong><label>{{gender}}<br></label></li> 
+					 <li><strong>Pasmina:</strong><label>{{breed}}<br></label></li> 
+					 <li><strong>Datum rođenja:</strong><label>{{dateOfBirth}}<br></label></li>
+				</ul>
+           <p><em>{{description}}</em></p>
+					 <button id="edit-button">Uredi</button>
+			</div>
+			 <div class="right-main-container">
+           <div class="main-picture-container">
+             <img src="{{mainImageURL}}" alt="{{mainImageTitle}}"/>
+           </div>
+           <div class="stars-container">
+             <i class="fa fa-star fa-2x star-icon" aria-hidden="true"></i>
+             <i class="fa fa-star fa-2x star-icon" aria-hidden="true"></i>
+             <i class="fa fa-star fa-2x star-icon" aria-hidden="true"></i>
+             <i class="fa fa-star fa-2x star-icon" aria-hidden="true"></i>
+             <i class="fa fa-star fa-2x star-icon" aria-hidden="true"></i>
+           </div>
+				</div>
+		</div>
+		</script>
+    <script type="text/html" id="card-template"> 
+			<div class="card" data-card-name="{{cardTitle}}">
+          <i class="fa fa-times delete-button"></i>
+          <img src="{{cardImageURL}}" alt="{{dogName}}"/> 
+          <h3>{{dogName}}</h3>
+          <button class="more-button">VIŠE</button>
+			</div>
+		</script>
+    
+    <script src="scripts/vendor/jquery-3.1.1.min.js"></script>
+		<script src="scripts/vendor/mustache.min.js"></script>
+		<script src="scripts/dogData.js"></script>
+		<script src="scripts/cards.js"></script>
+		<script src="scripts/slider.js"></script>
+		<script src="scripts/main-slide-modifications.js"></script>
+  </body>
+</html>
